@@ -18,7 +18,7 @@ const Card = () => {
                 <h2 className="result">76 <span>of 100</span></h2>
                 <ul className="card-left-info">
                     <h4>great</h4>
-                    <p>You scored higher than 65% of the people who have taken these tests.</p>
+                    <p>You scored highers than 65% of the people who have taken these tests.</p>
                 </ul>
             </div>
             {/* Card Right Part */}
