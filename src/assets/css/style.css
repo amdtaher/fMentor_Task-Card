@@ -1,0 +1,197 @@
+/* 
+  Site Name: Card
+  Author Name: Taher Ahmed
+
+  index of sections:
+  0.0 base
+  0.5 Common Styles
+  01. Card
+*/
+
+/* 0.0 Base */
+@font-face {
+    font-family: 'heiniken';
+    src: url(../fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+:root{
+    --primay-color: #4233f0;
+    --secondary-color: #c7beff;
+    --dark-primary-color: #4c22cc;
+    --black: #333;
+    --white: #fff;
+    --grey: #b5b5b5;
+    --bg: #e7edfb;
+}
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'heiniken', sans-serif;
+  background-color: aliceblue;
+}
+p{
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/* 01.Card */
+.card {
+    max-width: 700px;
+    height: 100% !important;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-transform: capitalize;
+    border-radius: 30px;
+    background-color: var(--white);
+    margin-top: 20px;
+    box-shadow: 15px 15px 10px var(--bg);
+    margin-top: 150px;
+}
+/* Card Left */
+.card-left{
+    background: linear-gradient(220deg, rgba(103,67,255,1) 0%, rgba(66,51,240,1) 30%);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    text-align: center;
+}
+.card-left-title{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: var(--secondary-color);
+}
+.result{
+    width: 170px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bolder;
+    background: linear-gradient(180deg, rgb(62, 10, 215) 0%, rgba(66,51,240,1) 90%);
+    border-radius: 50%;
+    margin-block: 20px;
+}
+.result span{
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+.card-left-info{
+    padding: 0 20px;
+}
+.card-left-info h4{
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 0;
+}
+.card-left-info p{
+    color: var(--secondary-color);
+    padding: 0 20px;
+}
+/*right card*/
+.card-right{
+    background-color: var(--white);
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 20px;
+    border-radius: 30px;
+}
+.card-right-lists{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.single-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+.single-list .list-left{
+    display: flex;
+    gap: 10px;
+}
+.single-list h4{
+    font-size: 18px;
+    font-weight: 600;
+}
+.single-list:nth-child(1){
+    background: rgba(209, 127, 100, 0.100);
+}
+.single-list:nth-child(2){
+    background: rgba(210, 165, 69, 0.1);
+}
+.single-list:nth-child(3){
+    background: rgba(58, 181, 100, 0.100);
+}
+.single-list:nth-child(4){
+    background: rgba(61, 71, 156, 0.1);
+}
+.single-list:nth-child(1) h4{
+    color: #d17f7b;
+}
+.single-list:nth-child(2) h4{
+    color: #ffce52;
+}
+.single-list:nth-child(3) h4{
+    color: #3ab590;
+}
+.single-list:nth-child(4) h4{
+    color: #262c6e;
+}
+.single-list .list-right h4{
+    color: var(--black);
+}
+.single-list .list-right h4 span{
+    color: var(--grey);
+}
+.card-button{
+    padding: 20px;
+    margin: 50px;
+    width: 100%;
+}
+.btn{
+    text-align: center;
+    font-weight: 600;
+    padding: 15px 20px;
+    border-radius: 50px;
+    background-color: var(--primay-color);
+    color: var(--white);
+    border: 1px solid transparent;
+    text-transform: capitalize;
+    transition: .3s;
+}
+.btn:hover{
+    background-color: var(--white);
+    color: var(--primay-color);
+    border: 1px solid var(--primay-color);
+}
+/* Attribution */
+.attribution{
+    text-align: center;
+    margin: 50px auto;
+}
